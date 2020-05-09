@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
-@Component
-@Lazy
+@Component(value = "java")
+// @Lazy
 public class JavaBooks implements Books {
 
 	public JavaBooks() {

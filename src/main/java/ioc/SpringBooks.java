@@ -11,23 +11,13 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component(value = "spring")
-@Primary
+// @Primary
 // @Scope(scopeName = "prototype")
-@Scope(scopeName = "singleton")
+// @Scope(scopeName = "singleton")
 public class SpringBooks implements Books {
 
 	public SpringBooks() {
 		System.out.println("SpringBooks()");
-	}
-
-	@PostConstruct
-	public void postConstruct() {
-		System.out.println("PostConstruct() in SpringBooks");
-	}
-
-	@PreDestroy
-	public void preDestroy() {
-		System.out.println("PreDestory() in SpringBooks");
 	}
 
 	@Override
