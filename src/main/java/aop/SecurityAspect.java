@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
 @Order(1)
 public class SecurityAspect {
 
-	@Before(value = "within(aop.*)")
+	/*@Before(value = "within(aop.*)")
 	public void beforeAdviceMethod(JoinPoint jp) {
 		System.out.println("Security Check  --> " + jp.getSignature());
-	}
+	}*/
 }

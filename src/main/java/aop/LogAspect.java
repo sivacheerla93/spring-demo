@@ -14,9 +14,10 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Order()
 public class LogAspect {
-	@Pointcut("execution (* aop.Order.*(..))")
+	
+	/*@Pointcut("execution (* aop.Order.*(..))")
 	public void orderMethods() {
-	}
+	}*/
 
 	/*@Before(value = "execution (* place*(..))")
 	public void beforeAdviceMethod(JoinPoint jp) {
@@ -38,7 +39,7 @@ public class LogAspect {
 		System.out.println("After Advice With Order Method --> " + jp.getSignature());
 	}*/
 
-	@Around(value = "execution (* aop.Order.get*(..))")
+	/*@Around(value = "execution (* aop.Order.get*(..))")
 	public void aroundAdviceMethod(ProceedingJoinPoint pjp) {
 		System.out.println("Before calling : " + pjp.getSignature());
 		try {
@@ -48,6 +49,6 @@ public class LogAspect {
 
 		}
 		System.out.println("After completing : " + pjp.getSignature());
-	}
+	}*/
 
 }
